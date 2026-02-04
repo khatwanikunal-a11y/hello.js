@@ -6,7 +6,7 @@ function parseInputToArray(input) {
   let numbers = [];
 
   for (let i = 0; i < k.length; i++) {
-    let value = parseInt(k[i].trim(), 10);
+    let value = parseInt(k[i].trim(), 10);  //string to number and trimmed spaces
 
     // Check if the value is a valid number
     if (!isNaN(value)) {
