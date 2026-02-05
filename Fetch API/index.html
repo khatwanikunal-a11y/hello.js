@@ -1,0 +1,14 @@
+<head>
+  <title>API Fetch</title>
+</head>
+<body>
+  <div id="output">Loading...</div>
+
+  <script>
+    fetch("https://catfact.ninja/fact")
+      .then(response => response.json())   // convert json response to javascript object
+      .then(data => {
+        document.getElementById("output").textContent = data.fact;
+      }); 
+  </script>
+</body>
